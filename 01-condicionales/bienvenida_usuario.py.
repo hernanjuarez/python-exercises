@@ -1,0 +1,19 @@
+"""
+Un ordenador tiene tres usuarios distintos (Alejandro, Naomi y Sergio) y otro usuario invitado.
+Haz un script que pida el nombre al usuario y le dé una bienvenida personalizada. Crea el script
+de tal manera que si el usuario no es ninguno de los tres se le dé un saludo genérico.
+"""
+#---BIENVENIDA AL USUARIO: 
+#Sector usuarios
+usuario_1 = "alejandro"
+usuario_2 = "naomi"
+usuario_3 = "sergio"
+
+#ingreso de usuari
+nombreusuario = input("Ingrese su nombre de usuario: ").strip()
+
+#Identificacion de usuario y saludo
+if nombreusuario.lower() == usuario_1 or nombreusuario.lower() ==  usuario_2 or nombreusuario.lower() == usuario_3:
+    print(f"¡Bienvenido usuario {nombreusuario.title()}!")
+else:
+    print("¡Bienvenido usuario invitado!")
